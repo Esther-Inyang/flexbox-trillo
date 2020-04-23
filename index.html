@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="material-icon.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/favicon.png" class="header__logo" alt="trillo logo">
+            <!--Go to iconmoon, add and download the SVG icons needed,copy the sprite file and paste inside the code file-->
+
+            <form action="#" class="search">
+                <input type="text" name="search__input" class="search__input" placeholder="Search hotels">
+                <button class="search__button">
+                    <i class="material-icons md-18 search__icon" title="search">search</i> <!--Temporary-->
+                    <!--
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+
+                    Go to iconmoon, add and download the SVG icons needed,copy the sprite file and paste inside the code file. Note: use # sign before the svg icon name-->
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <i class="material-icons md-24 user-nav__icon" title="bookmark">bookmark</i>  <!--Temporary-->
+                    <!--
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>-->
+                    <span class="user-nav__notification">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <i class="material-icons md-24 user-nav__icon" title="chat">chat</i> <!--Temporary-->
+                    <!--
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>-->
+                    <span class="user-nav__notification">13</span>
+                </div>
+
+                <div class="user-nav__user">
+                    <img src="images/mypic.jpg" alt="user photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Queen</span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <i class="material-icons md-26 side-nav__icon">home</i> <!--Temporary-->
+                             <!--
+                                <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>-->
+                            <span>Hotels</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="material-icons md-26 side-nav__icon">flight</i> <!--aircraft - Temporary-->
+                             <!--
+                                <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>-->
+                            <span>Flight</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="material-icons md-26 side-nav__icon">vpn_key</i> <!--key - Temporary-->
+                             <!--
+                                <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>-->
+                            <span>Car rentals</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <i class="material-icons md-26 side-nav__icon">map</i> <!--Temporary-->
+                            <!--
+                                <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>-->
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2020 by trillo. All rights reserved.
+                </div>
+            </nav>
+
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="images/img4.jpg" alt="photo of hotel 1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/img6.jpg" alt="photo of hotel 2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/img5.jpg" alt="photo of hotel 3" class="gallery__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Hotel la Carlifonia
+                    </h1>
+
+                    <div class="overview__stars">
+                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
+                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
+                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
+                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
+                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
+                        <!--
+                            <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg> Note: 5 Times-->
+                    </div>
+
+                    <div class="overview__location">
+                        <i class="material-icons md-30 overview__location-icon">location_on</i> <!--location icon,Temporary-->
+                        <!--
+                            <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg> Note: 5 Times-->
+                        <button class="btn-inline">New City hotel</button>
+                    </div>
+
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">9.5</div>
+                        <div class="overview__rating-count">593 votes</div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quia aliquam ex incidunt, nulla obcaecati laborum laboriosam dignissimos expedita nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, tempora.
+                        </p>
+
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur doloremque repellendus? Itaque, dolores voluptate? Quasi veritatis sit velit inventore.
+                        </p>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Close the mountains
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Lunch and dinner covered
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Free books for readers
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Free internet connection
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Animal care included
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Cold and warm conditioner
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Language familiarity
+                            </li>
+                            <li class="list__item">
+                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                Playground for kids
+                            </li>
+                        </ul>
+
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                John and five other friends recommend this hotel.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="images/img9.jpg" alt="Friend 1" class="recommend__photo">
+                                <img src="images/img8.jpg" alt="Friend 1" class="recommend__photo">
+                                <img src="images/img10.jpg" alt="Friend 1" class="recommend__photo">
+                                <img src="images/img11.jpg" alt="Friend 1" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolores eligendi ipsum nostrum quidem culpa harum quis commodi in accusantium.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="images/img12.jpg" alt="Friend 1" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">George Saint</p>
+                                    <p class="review__user-date">April 7th, 2010</p>
+                                </div>
+                                <div class="review__rating">8.1</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolores eligendi ipsum nostrum quidem.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="images/img3.jpg" alt="Friend 1" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Queen Estee</p>
+                                    <p class="review__user-date">July 17th, 2013</p>
+                                </div>
+                                <div class="review__rating">6.9</div>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-inline">Show all <span class="review-btnArrow">&rarr;</span></button>
+                    </div>
+                </div>
+
+                
+                <div class="cta">
+                    <h2 class="cta__heading">
+                        Good news! We have 4 free rooms for your selected dates!
+                    </h2>
+                    <button class="cta__btn">
+                        <span class="btn-visible">Book now</span>
+                        <span class="btn-invisible">Only 4 rooms left</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
