@@ -4,44 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trillo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="material-icon.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <img src="images/favicon.png" class="header__logo" alt="trillo logo">
-            <!--Go to iconmoon, add and download the SVG icons needed,copy the sprite file and paste inside the code file-->
 
             <form action="#" class="search">
                 <input type="text" name="search__input" class="search__input" placeholder="Search hotels">
-                <button class="search__button">
-                    <i class="material-icons md-18 search__icon" title="search">search</i> <!--Temporary-->
-                    <!--
+                <button class="search__button"> 
                     <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
                     </svg>
-
-                    Go to iconmoon, add and download the SVG icons needed,copy the sprite file and paste inside the code file. Note: use # sign before the svg icon name-->
                 </button>
             </form>
 
             <nav class="user-nav">
                 <div class="user-nav__icon-box">
-                    <i class="material-icons md-24 user-nav__icon" title="bookmark">bookmark</i>  <!--Temporary-->
-                    <!--
                     <svg class="user-nav__icon">
                         <use xlink:href="img/sprite.svg#icon-chat"></use>
-                    </svg>-->
+                    </svg>
                     <span class="user-nav__notification">7</span>
                 </div>
 
                 <div class="user-nav__icon-box">
-                    <i class="material-icons md-24 user-nav__icon" title="chat">chat</i> <!--Temporary-->
-                    <!--
                     <svg class="user-nav__icon">
                         <use xlink:href="img/sprite.svg#icon-chat"></use>
-                    </svg>-->
+                    </svg>
                     <span class="user-nav__notification">13</span>
                 </div>
 
@@ -56,45 +47,37 @@
             <nav class="sidebar">
                 <ul class="side-nav">
                     <li class="side-nav__item side-nav__item--active">
-                        <a href="#" class="side-nav__link">
-                            <i class="material-icons md-26 side-nav__icon">home</i> <!--Temporary-->
-                             <!--
-                                <svg class="user-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-home"></use>
-                            </svg>-->
+                        <a href="#" class="side-nav__link">  
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
                             <span>Hotels</span>
                         </a>
                     </li>
 
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
-                            <i class="material-icons md-26 side-nav__icon">flight</i> <!--aircraft - Temporary-->
-                             <!--
-                                <svg class="user-nav__icon">
+                            <svg class="user-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
-                            </svg>-->
+                            </svg>
                             <span>Flight</span>
                         </a>
                     </li>
 
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
-                            <i class="material-icons md-26 side-nav__icon">vpn_key</i> <!--key - Temporary-->
-                             <!--
-                                <svg class="user-nav__icon">
+                            <svg class="user-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-key"></use>
-                            </svg>-->
+                            </svg>
                             <span>Car rentals</span>
                         </a>
                     </li>
 
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
-                            <i class="material-icons md-26 side-nav__icon">map</i> <!--Temporary-->
-                            <!--
-                                <svg class="user-nav__icon">
+                            <svg class="user-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-map"></use>
-                            </svg>-->
+                            </svg>
                             <span>Tours</span>
                         </a>
                     </li>
@@ -124,23 +107,28 @@
                     </h1>
 
                     <div class="overview__stars">
-                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
-                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
-                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
-                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
-                        <i class="material-icons md-28 overview__stars--icon">star</i> <!--Temporary-->
-                        <!--
-                            <svg class="user-nav__icon">
+                        <svg class="overview__icon-stars">
                             <use xlink:href="img/sprite.svg#icon-star"></use>
-                        </svg> Note: 5 Times-->
+                        </svg>
+                        <svg class="overview__icon-stars">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-stars">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-stars">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-stars">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
                     </div>
 
                     <div class="overview__location">
-                        <i class="material-icons md-30 overview__location-icon">location_on</i> <!--location icon,Temporary-->
-                        <!--
-                            <svg class="user-nav__icon">
+                        <svg class="overview__location-icon">
                             <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                        </svg> Note: 5 Times-->
+                        </svg>
+
                         <button class="btn-inline">New City hotel</button>
                     </div>
 
@@ -162,35 +150,35 @@
 
                         <ul class="list">
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Close the mountains
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Lunch and dinner covered
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Free books for readers
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Free internet connection
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Animal care included
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Cold and warm conditioner
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Language familiarity
                             </li>
                             <li class="list__item">
-                                <i class="material-icons md-32">navigate_next</i> <!--Temporary-->
+                                <i class="material-icons md-32">navigate_next</i> <!--Instead of svg-->
                                 Playground for kids
                             </li>
                         </ul>
@@ -201,9 +189,9 @@
                             </p>
                             <div class="recommend__friends">
                                 <img src="images/img9.jpg" alt="Friend 1" class="recommend__photo">
-                                <img src="images/img8.jpg" alt="Friend 1" class="recommend__photo">
+                                <img src="images/img8.JPG" alt="Friend 1" class="recommend__photo">
                                 <img src="images/img10.jpg" alt="Friend 1" class="recommend__photo">
-                                <img src="images/img11.jpg" alt="Friend 1" class="recommend__photo">
+                                <img src="images/img11.JPG" alt="Friend 1" class="recommend__photo">
                             </div>
                         </div>
                     </div>
@@ -214,7 +202,7 @@
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolores eligendi ipsum nostrum quidem culpa harum quis commodi in accusantium.
                             </blockquote>
                             <figcaption class="review__user">
-                                <img src="images/img12.jpg" alt="Friend 1" class="review__photo">
+                                <img src="images/img12.JPG" alt="Friend 1" class="review__photo">
                                 <div class="review__user-box">
                                     <p class="review__user-name">George Saint</p>
                                     <p class="review__user-date">April 7th, 2010</p>
@@ -228,7 +216,7 @@
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolores eligendi ipsum nostrum quidem.
                             </blockquote>
                             <figcaption class="review__user">
-                                <img src="images/img3.jpg" alt="Friend 1" class="review__photo">
+                                <img src="images/img3.JPG" alt="Friend 1" class="review__photo">
                                 <div class="review__user-box">
                                     <p class="review__user-name">Queen Estee</p>
                                     <p class="review__user-date">July 17th, 2013</p>

@@ -11,7 +11,7 @@
 
     color-grey-dark-1: #333
     color-grey-dark-2: #777
-    color-grey-dark-3: #999
+    color-grey-dark-3: #999 
 */
 
 *{
@@ -113,22 +113,16 @@ body{
     transform: translateY(2px);
 }
 
-/*.search__icon{
-    fill: red;   used to specify color
+.search__icon{                                      /*NOTE::: SVG Icons works only of web server*/
+    fill: #999;                                   /*used to specify color*/
     height: 2rem;
-    width: 2rem; For the SVG icon
-}*/
-
-.material-icons.md-18{
-    font-size: 18px;
-    color: #999;
+    width: 2rem; 
 }
 
 
 /*user-nav*/
 .user-nav{
     align-self: stretch;                           /*since the parent was set to center, we want this stretched*/
-
     display: flex;
     align-items: center;
 }
@@ -149,16 +143,11 @@ body{
     position: relative;
 }
 
-.material-icons.md-24{
-    color: #777;
-}
-/*.user-nav__icon{
-    for SVG
-
+.user-nav__icon{
     height: 2.25rem;
     width: 2.25rem;
     fill: #777;
-}*/
+}
 
 .user-nav__notification{
     font-size: .8rem;
@@ -262,15 +251,10 @@ body{
     align-items: center;
 }
 
- /*.side-nav__icon{
-    svg
+.side-nav__icon{
     width: 1.75rem;
     height: 1.75;
-    fill: currentColor; Also like inherit of the element itself or the Parent
-}*/
-
-.material-icons.md-26{
-    color: #faf9f9;
+    fill: currentColor;                          /*Also like inherit of the element itself or the Parent*/
     margin-right: 2rem;
 }
 
@@ -325,10 +309,11 @@ body{
     display: flex;
 }
 
-.material-icons.md-28,
-.material-icons.md-30{
-    color: #eb2f64;
-    font-size: 18px;
+.overview__icon-stars,
+.overview__location-icon{
+    fill: #eb2f64;
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 /*location*/
@@ -336,10 +321,6 @@ body{
     font-size: 1.2rem;
     display: flex;
     vertical-align: center;
-}
-
-.material-icons.md-30{
-    margin-right: .5rem;
 }
 
 .btn-inline{
@@ -454,6 +435,7 @@ body{
 }
 
 /*
+(Note: I used Material-icons here instead)
 TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
 
 .list__item::before{
@@ -731,11 +713,6 @@ TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
     .side-nav__link:visited{
         flex-direction: column;
         padding: 1.5rem .5rem;
-    }
-
-    .material-icons.md-26{
-        margin: 0 0 .3rem 0;
-        font-size: 18px;
     }
 
     .overview__heading{
