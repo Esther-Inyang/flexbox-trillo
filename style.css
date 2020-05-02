@@ -31,7 +31,7 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.6;
     background-image: linear-gradient(to right bottom, 
@@ -85,7 +85,7 @@ body{
     border: none;
     border-radius: 8rem;
     transition: all .2;
-    margin-right: -2.25rem;
+    margin-right: -3.50rem;
 }
 
 .search__input:focus{
@@ -113,12 +113,16 @@ body{
     transform: translateY(2px);
 }
 
-.search__icon{                                      /*NOTE::: SVG Icons works only of web server*/
-    fill: #999;                                   /*used to specify color*/
+/*
+.search__icon{                                      /*NOTE::: SVG Icons works only of web server
+    fill: #999;                                   /*used to specify color
     height: 2rem;
     width: 2rem; 
-}
+}*/
 
+.material-icons.md-24{
+    color: #999;
+}
 
 /*user-nav*/
 .user-nav{
@@ -143,13 +147,24 @@ body{
     position: relative;
 }
 
+/*
 .user-nav__icon{
     height: 2.25rem;
     width: 2.25rem;
     fill: #777;
+}*/
+
+.material-icons.md-26{
+    color: #777;
+    margin-right: -2rem;
 }
 
-.user-nav__notification{
+.material-icons.md-28{
+    color: #777;
+}
+
+.user-nav__notificationA,
+.user-nav__notificationB{
     font-size: .8rem;
     height: 1.4rem;
     width: 1.4rem;
@@ -157,12 +172,19 @@ body{
     border-radius: 50%;
     background-color: #eb2f64;
     position:absolute;
-    top: 1.9rem;
-    right: 1.3rem;
-  
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.user-nav__notificationA{
+    top: 1.9rem;
+    right: 1.8rem;
+}
+
+.user-nav__notificationB{
+    top: 1.9rem;
+    right: 1.5rem;
 }
 
 .user-nav__user-photo{
@@ -251,11 +273,21 @@ body{
     align-items: center;
 }
 
+.side-nav__link span{
+    margin-left: 2rem;
+}
+
+/*For SVG
 .side-nav__icon{
     width: 1.75rem;
     height: 1.75;
-    fill: currentColor;                          /*Also like inherit of the element itself or the Parent*/
+    fill: currentColor;                          /*Also like inherit of the element itself or the Parent
     margin-right: 2rem;
+}*/
+
+.material-icons.md-29{
+    font-size: 3rem;
+    color: #faf9f9;
 }
 
 .legal{
@@ -309,11 +341,16 @@ body{
     display: flex;
 }
 
-.overview__icon-stars,
+/*.overview__icon-stars,
 .overview__location-icon{
     fill: #eb2f64;
     width: 1.75rem;
     height: 1.75rem;
+}*/
+
+.material-icons.md-30{
+    color: #eb2f64;
+    font-size: 2rem;
 }
 
 /*location*/
@@ -334,6 +371,7 @@ body{
     background-color: transparent;
     cursor: pointer;
     transition: all .2s;
+    margin-left: .5rem;
 }
 
 .btn-inline:hover{
@@ -518,7 +556,7 @@ TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
     left: -1rem;
     font-size: 20rem;
     color: #f4f2f2;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     line-height: 1;                                            /*to position it up*/
 }
 
@@ -653,6 +691,10 @@ TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
 
 @media only screen and (max-width: 56.25em){                   /*900px/16px = 75*/
    
+    .user-nav__notificationA{
+        right: 2.5rem;
+    }
+
     .content{
         flex-direction: column;
     }
@@ -712,8 +754,13 @@ TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
     .side-nav__link:link,
     .side-nav__link:visited{
         flex-direction: column;
-        padding: 1.5rem .5rem;
+        padding: 1rem .5rem;
+        font-size: 1.3rem;
     }
+
+    .side-nav__link span{
+        margin-left: 0;
+    }    
 
     .overview__heading{
         font-size: 1.4rem;
@@ -748,5 +795,15 @@ TO SET THE SVG ICON RIGHT INSIDE CSS, DO THIS
 
     .overview__stars{
         margin-right: 1.3rem;                              
+    }
+
+    .user-nav__notificationA{
+        top: 1rem;
+        right: 2.2rem;
+    }
+    
+    .user-nav__notificationB{
+        top: 1rem;
+        right: 1.5rem;
     }
 }
